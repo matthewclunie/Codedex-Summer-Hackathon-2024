@@ -7,9 +7,9 @@ dotenv.config();
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  build: {
-    rollupOptions: {
-      external: ["@vis.gl/react-google-maps"],
-    },
-  },
+  // build: {
+  //   rollupOptions: {
+  //     external: ["@vis.gl/react-google-maps"],
+  //   },
+  // },
 });
