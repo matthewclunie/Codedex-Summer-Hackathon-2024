@@ -1,12 +1,12 @@
-import { APIProvider, Map, AdvancedMarker } from "@vis.gl/react-google-maps";
+// import { APIProvider, Map, AdvancedMarker } from "@vis.gl/react-google-maps";
 import Date from "../assets/date.png";
 import Time from "../assets/time.png";
 import BrookSale from "../assets/brooklyn_stoop_sale.png";
 
 const Invite = ({ score }) => {
-  const position = { lat: 40.6795, lng: -73.9992 };
-  const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
-  const mapId = import.meta.env.VITE_MAP_ID;
+  // const position = { lat: 40.6795, lng: -73.9992 };
+  // const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
+  // const mapId = import.meta.env.VITE_MAP_ID;
 
   return (
     <div className="h-screen">
@@ -27,13 +27,13 @@ const Invite = ({ score }) => {
             eclectic neighborhood. See you there!
           </p>
         </div>
-        <APIProvider apiKey={apiKey}>
+        {/* <APIProvider apiKey={apiKey}>
           <div className="flex items-center justify-center m-8 border-2 border-black rounded-sm">
             <Map zoom={15} center={position} mapId={mapId}>
               <AdvancedMarker position={position} />
             </Map>
           </div>
-        </APIProvider>
+        </APIProvider> */}
         <div className="flex items-center justify-center p-8">
           <img src={Date} className="pb-12" />
         </div>
