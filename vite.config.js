@@ -9,7 +9,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: [/^node:.*/],
+      external: ["@vis.gl/react-google-maps"],
     },
   },
 });
