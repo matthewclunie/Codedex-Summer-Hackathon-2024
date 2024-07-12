@@ -1,8 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import dotenv from "dotenv";
-// import envPlugin from "vite-plugin-env";
-import path from "path";
 
 dotenv.config();
 
@@ -11,7 +9,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: [/^@:.*/],
+      external: [/^node:.*/],
     },
   },
 });
