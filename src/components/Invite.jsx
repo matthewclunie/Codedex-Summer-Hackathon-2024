@@ -1,4 +1,3 @@
-/* eslint-disable */
 import { APIProvider, Map, AdvancedMarker } from "@vis.gl/react-google-maps";
 import Date from "../assets/date.png";
 import Time from "../assets/time.png";
@@ -28,13 +27,13 @@ const Invite = ({ score }) => {
             eclectic neighborhood. See you there!
           </p>
         </div>
-        <APIProvider apiKey={apiKey}>
-          <div className="flex items-center justify-center m-8 border-2 border-black rounded-sm">
+        <div className="flex items-center justify-center m-8 border-2 border-black rounded-sm">
+          <APIProvider apiKey={apiKey}>
             <Map zoom={15} center={position} mapId={mapId}>
               <AdvancedMarker position={position} />
             </Map>
-          </div>
-        </APIProvider>
+          </APIProvider>
+        </div>
         <div className="flex items-center justify-center p-8">
           <img src={Date} className="pb-12" />
         </div>
